@@ -1,4 +1,4 @@
-# Customer Shopping Behaviour Analysis
+# Customer Behaviour Analysis
 
 ## Overview
 
