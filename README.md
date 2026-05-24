@@ -85,7 +85,7 @@ The dashboard was built in Power BI to visualize customer purchasing patterns, c
 
 ### KPI Cards
 
-![Dashboard KPIs](https://github.com/muhammed-swalih296/Customer_Behaviour_Analysis/blob/main/Screenshot%202026-05-21%20125159.png)
+![Dashboard KPIs](https://github.com/muhammed-swalih296/Customer_Behaviour_Analysis/blob/main/Customer-Dasboard-KPIs.png)
 
 ### Dashboard Features
 
