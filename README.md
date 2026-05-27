@@ -1,160 +1,183 @@
-# Customer Behaviour Analysis
+# Customer Shopping Behavior Analysis
 
-## Overview
+## Project Overview
 
-This project analyzes customer shopping behaviour using Python, SQL Server, and Power BI. The workflow includes data cleaning, exploratory data analysis (EDA), SQL-based business analysis, dashboard creation, and reporting.
+This project focuses on analyzing customer shopping behavior using Python, Microsoft SQL Server, and Power BI. The workflow includes data cleaning, exploratory data analysis, SQL-based business analysis, KPI generation, and dashboard visualization.
 
-The goal of the project is to identify customer purchasing patterns, subscription behaviour, revenue trends, and product performance.
-
----
-
-## Dataset
-
-* Dataset: Customer Shopping Behaviour Dataset
-* Format: CSV
-* Records include:
-
-  * Customer demographics
-  * Purchase amount
-  * Product category
-  * Review ratings
-  * Shipping type
-  * Discount usage
-  * Subscription status
-  * Previous purchases
+The objective of the project is to identify customer purchasing patterns, product trends, revenue insights, and behavioral characteristics that can support business decision-making.
 
 ---
 
-## Tools & Technologies
+## Dashboard Preview
 
-* Python
-* Pandas
-* SQL Server
-* SQLAlchemy
-* Power BI
-* Jupyter Notebook
+### Customer Shopping Dashboard
+
+*Add your dashboard screenshot here*
+
+```md
+![Dashboard Screenshot](screenshots/dashboard.png)
+```
+
+### KPI Overview
+
+*Add your KPI screenshot here*
+
+```md
+![KPI Screenshot](screenshots/kpi.png)
+```
 
 ---
 
-## Project Workflow
+## Business Problem
 
-### 1. Data Loading
+Retail businesses generate large amounts of customer transaction data, but extracting meaningful insights from this data is often challenging.
 
-* Loaded the dataset into Python using Pandas.
-* Connected Python with SQL Server using SQLAlchemy.
+This project aims to:
 
-### 2. Data Cleaning
+* Understand customer purchasing behavior
+* Identify high-performing product categories
+* Analyze revenue and spending patterns
+* Generate business KPIs for better decision-making
+* Create interactive dashboards for data visualization
 
-* Checked missing values and data types.
-* Removed inconsistencies and prepared the dataset for analysis.
-* Created derived fields such as customer segments and age groups.
+---
 
-### 3. Exploratory Data Analysis (EDA)
+## Tools & Technologies Used
 
-Performed analysis on:
+| Tool                 | Purpose                           |
+| -------------------- | --------------------------------- |
+| Python (Pandas)      | Data Cleaning & Preprocessing     |
+| Microsoft SQL Server | Data Analysis & Querying          |
+| Power BI             | Dashboard & Visualization         |
+| GitHub               | Project Hosting & Version Control |
+
+---
+
+## Dataset Information
+
+The dataset contains customer shopping transaction records including:
 
 * Customer demographics
-* Purchase behaviour
 * Product categories
-* Discounts and subscriptions
-* Revenue trends
+* Purchase amounts
+* Shopping frequency
+* Payment methods
+* Customer preferences
 
-### 4. SQL Analysis
-
-Business questions were solved using SQL queries in SQL Server.
-
-Some key analyses include:
-
-* Revenue comparison by gender
-* Average spending of subscribed vs non-subscribed customers
-* Top-rated products
-* Discount usage analysis
-* Customer segmentation
-* Top purchased products by category
-* Revenue contribution by age group
+The dataset was first processed using Python/Pandas before being imported into SQL Server for analytical querying.
 
 ---
 
-## Power BI Dashboard
+## Data Cleaning & Preprocessing
 
-The dashboard was built in Power BI to visualize customer purchasing patterns, category performance, subscription behaviour, and revenue insights.
+Data preprocessing was performed using Python and Pandas.
 
-### Dashboard Preview
+### Steps Performed
 
-![Customer Behavior Dashboard](https://github.com/muhammed-swalih296/Customer_Behaviour_Analysis/blob/main/Customer-Dasboard.png)
+* Converted column names to lowercase
+* Checked for missing values
+* Verified data consistency
+* Prepared the dataset for SQL Server import
 
-### KPI Cards
+Since the dataset contained no missing values, it was directly exported to SQL Server for further analysis.
 
-![Dashboard KPIs](https://github.com/muhammed-swalih296/Customer_Behaviour_Analysis/blob/main/Customer-Dasboard-KPIs.png)
+---
 
-### Dashboard Features
+## SQL Analysis Performed
 
-* KPI cards for total customers, average purchase amount, and review ratings
-* Revenue analysis by category
-* Sales analysis by category
-* Customer segmentation by age group
-* Subscription status analysis
-* Interactive slicers for:
+The following analyses were conducted using SQL Server:
 
-  * Gender
-  * Category
-  * Subscription status
-  * Shipping type
+* Customer count analysis
+* Gender-based analysis
+* Average purchase behavior
+* Revenue analysis
+* Product category performance
+* KPI generation
+* Aggregation and grouping analysis
+* Percentage contribution analysis
+* Ranking and sorting operations
 
-### Key Dashboard Metrics
+### Example SQL Concepts Used
 
-* Total Customers: 3.9K
-* Average Purchase Amount: $59.76
-* Average Review Rating: 3.75
+* SELECT statements
+* GROUP BY
+* ORDER BY
+* Aggregate Functions
+* CASE Statements
+* Common Table Expressions (CTEs)
+* CAST & ROUND functions
+* Joins
+
+---
+
+## Power BI Dashboard Features
+
+The Power BI dashboard includes:
+
+* Interactive filters
+* KPI cards
+* Customer demographic analysis
+* Revenue visualization
+* Product category insights
+* Purchase behavior trends
+* Dynamic visual reports
 
 ---
 
 ## Key Insights
 
-* Subscription customers showed higher average spending.
-* Certain products received consistently higher ratings.
-* Discount usage influenced purchasing behaviour.
-* Returning and loyal customers contributed a significant share of revenue.
+Some important insights derived from the analysis include:
+
+* Certain customer groups contributed significantly higher purchase values.
+* Product category performance varied across customer demographics.
+* Revenue contribution was concentrated among selected categories.
+* Customer shopping trends revealed patterns useful for business targeting.
+
+---
+
+## Business Recommendations
+
+Based on the analysis:
+
+* Focus marketing efforts on high-value customer groups.
+* Improve promotion strategies for low-performing categories.
+* Use customer behavior insights for targeted advertising.
+* Monitor KPI trends regularly for business optimization.
+* Implement data-driven decision-making strategies.
 
 ---
 
 ## Project Structure
 
 ```text
-Customer_Shopping_Behaviour_Analysis/
+Customer_Behaviour_Analysis/
 │
-├── Customer_Shopping_Behaviour_Analysis.ipynb
-├── customer.sql
-├── dashboard.pbix
-├── report.pdf
+├── dataset/
+├── sql_queries/
+├── dashboard/
+├── screenshots/
+├── report/
 └── README.md
 ```
 
 ---
 
-## How to Run
+## How to Run the Project
 
-### Python Analysis
+### 1. Data Cleaning
 
-1. Open the Jupyter Notebook.
-2. Install required libraries:
+* Open the Python notebook/script
+* Run preprocessing steps using Pandas
 
-```bash
-pip install pandas sqlalchemy
-```
+### 2. SQL Analysis
 
-3. Run the notebook cells sequentially.
+* Import the cleaned dataset into Microsoft SQL Server
+* Execute SQL queries for analysis
 
-### SQL Analysis
+### 3. Dashboard Visualization
 
-1. Open SQL Server Management Studio (SSMS).
-2. Import the dataset into SQL Server.
-3. Run the queries from `customer.sql`.
-
-### Dashboard
-
-1. Open the `.pbix` file in Power BI Desktop.
-2. Refresh the dataset connection if needed.
+* Open the Power BI dashboard file
+* Refresh the dataset connection if needed
 
 ---
 
@@ -163,13 +186,29 @@ pip install pandas sqlalchemy
 * Data Cleaning
 * Exploratory Data Analysis
 * SQL Query Writing
-* Customer Segmentation
+* Data Aggregation
+* KPI Development
+* Dashboard Design
 * Business Insight Generation
-* Dashboard Development
 * Data Visualization
+
+---
+
+## Future Improvements
+
+Possible future enhancements:
+
+* Advanced customer segmentation
+* Predictive analytics
+* Machine learning integration
+* Real-time dashboard updates
+* Customer retention analysis
 
 ---
 
 ## Author
 
-Muhammed Swalih
+**Muhammed Swalih**
+
+GitHub Repository:
+[https://github.com/muhammed-swalih296/Customer_Behaviour_Analysis](https://github.com/muhammed-swalih296/Customer_Behaviour_Analysis)
