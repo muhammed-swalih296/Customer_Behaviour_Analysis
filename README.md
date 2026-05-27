@@ -12,10 +12,9 @@ The objective of the project is to identify customer purchasing patterns, produc
 
 ### Customer Shopping Dashboard
 
-*Add your dashboard screenshot here*
 
 ```md
-![Dashboard Screenshot](screenshots/dashboard.png)
+![Dashboard Screenshot](https://github.com/muhammed-swalih296/Customer_Behaviour_Analysis/blob/main/Customer-Dasboard.png)
 ```
 
 ### KPI Overview
