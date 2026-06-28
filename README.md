@@ -21,7 +21,7 @@ The objective of the project is to identify customer purchasing patterns, produc
 
 
 ![KPI Screenshot](https://github.com/muhammed-swalih296/Customer_Behaviour_Analysis/blob/main/Customer-Dasboard-KPIs.png)
-```
+
 
 ---
 
